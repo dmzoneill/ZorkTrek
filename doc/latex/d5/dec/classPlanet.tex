@@ -1,0 +1,391 @@
+\hypertarget{classPlanet}{
+\section{Planet Class Reference}
+\label{d5/dec/classPlanet}\index{Planet@{Planet}}
+}
+Inheritance diagram for Planet:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{d5/dec/classPlanet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlanet_ac5a904c9d24bd4244ad72bb7ae3689f8}{Planet} (string name, \hyperlink{classStarTrekEntities}{StarTrekEntities} $\ast$stePointer)
+\item 
+\hyperlink{classPlanet_aaa1aaed9d4ef90b4836531edb7b18e0a}{$\sim$Planet} ()
+\item 
+string \hyperlink{classPlanet_a645b3d987a3001bac59a772b944607d2}{getName} ()
+\item 
+int \hyperlink{classPlanet_a37f64a787c17b5dd4471c8ad54fd9df0}{getTrianium} ()
+\item 
+int \hyperlink{classPlanet_a272240452921331e7220108df452a37d}{getDilithium} ()
+\item 
+int \hyperlink{classPlanet_a2b85fd628db9831d7ab5c7149b80cde3}{getFood} ()
+\item 
+int \hyperlink{classPlanet_af5bc4d184fcb72bd37f70119af5ecd89}{getWater} ()
+\item 
+int \hyperlink{classPlanet_a4499676225d09b0249cf225e795ce3cb}{getHealth} ()
+\item 
+int \hyperlink{classPlanet_a802c105bafd608a0ac57e8f03d2d2465}{getAthmosphericInterference} ()
+\item 
+int \hyperlink{classPlanet_ad7c07f51f9a447bf4aba45875e5f8e44}{getPlasma} ()
+\item 
+void \hyperlink{classPlanet_a298ae0e6344b5e83b4c53e5377b0531f}{setTrianium} (int val)
+\item 
+void \hyperlink{classPlanet_a780868e3c6275c2f8026bf7f7b910be1}{setDilithium} (int val)
+\item 
+void \hyperlink{classPlanet_a2f73c4ce9e4e4eb204b50413ea81d0cc}{setFood} (int val)
+\item 
+void \hyperlink{classPlanet_afbc0d813ae0d2a958487cfc2a06fd9d1}{setWater} (int val)
+\item 
+void \hyperlink{classPlanet_aa3ade00566dc836084395a25adc2cdb8}{setHealth} (int val)
+\item 
+void \hyperlink{classPlanet_a8f00e39da016ecdca4d1f0e7e8a76f5d}{setAthmosphericInterference} (int val)
+\item 
+void \hyperlink{classPlanet_a227e20f2716a12afddf50eddcd7c10c5}{setPlasma} (int val)
+\item 
+bool \hyperlink{classPlanet_a1b79060982d564661119fbae3d4a1726}{getGas} ()
+\item 
+void \hyperlink{classPlanet_ad039e19380947fbf2695d78d4059f1db}{scanMoon} (unsigned int i)
+\item 
+\hyperlink{classCelestialBody}{CelestialBody} $\ast$ \hyperlink{classPlanet_a86eb8c5701ace894c2ca47b80ae776e9}{targetMoon} (unsigned int i)
+\item 
+vector$<$ \hyperlink{classCelestialBody}{CelestialBody} $\ast$ $>$ \hyperlink{classPlanet_ac003f70ce4149dc5d87423dace7de0b1}{getMoons} ()
+\item 
+int \hyperlink{classPlanet_a4c5cc040f92ec9fde52a4cccd04b69ff}{getNumMoons} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlanet_ac5a904c9d24bd4244ad72bb7ae3689f8}{
+\index{Planet@{Planet}!Planet@{Planet}}
+\index{Planet@{Planet}!Planet@{Planet}}
+\subsubsection[{Planet}]{\setlength{\rightskip}{0pt plus 5cm}Planet::Planet (string {\em name}, \/  {\bf StarTrekEntities} $\ast$ {\em stePointer})}}
+\label{d5/dec/classPlanet_ac5a904c9d24bd4244ad72bb7ae3689f8}
+Constructor for planet
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]the name of the planet \item[{\em stePointer$\ast$}]the pointer to the startrekenties object \end{DoxyParams}
+\hypertarget{classPlanet_aaa1aaed9d4ef90b4836531edb7b18e0a}{
+\index{Planet@{Planet}!$\sim$Planet@{$\sim$Planet}}
+\index{$\sim$Planet@{$\sim$Planet}!Planet@{Planet}}
+\subsubsection[{$\sim$Planet}]{\setlength{\rightskip}{0pt plus 5cm}Planet::$\sim$Planet ()}}
+\label{d5/dec/classPlanet_aaa1aaed9d4ef90b4836531edb7b18e0a}
+destructs the planets moons 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlanet_a802c105bafd608a0ac57e8f03d2d2465}{
+\index{Planet@{Planet}!getAthmosphericInterference@{getAthmosphericInterference}}
+\index{getAthmosphericInterference@{getAthmosphericInterference}!Planet@{Planet}}
+\subsubsection[{getAthmosphericInterference}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getAthmosphericInterference ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a802c105bafd608a0ac57e8f03d2d2465}
+Accessor for the celestial body data member athmospheric interferance
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a272240452921331e7220108df452a37d}{
+\index{Planet@{Planet}!getDilithium@{getDilithium}}
+\index{getDilithium@{getDilithium}!Planet@{Planet}}
+\subsubsection[{getDilithium}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getDilithium ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a272240452921331e7220108df452a37d}
+Accessor for the celestial body data member dilthium
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a2b85fd628db9831d7ab5c7149b80cde3}{
+\index{Planet@{Planet}!getFood@{getFood}}
+\index{getFood@{getFood}!Planet@{Planet}}
+\subsubsection[{getFood}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getFood ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a2b85fd628db9831d7ab5c7149b80cde3}
+Accessor for the celestial body data member food
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a1b79060982d564661119fbae3d4a1726}{
+\index{Planet@{Planet}!getGas@{getGas}}
+\index{getGas@{getGas}!Planet@{Planet}}
+\subsubsection[{getGas}]{\setlength{\rightskip}{0pt plus 5cm}bool Planet::getGas ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a1b79060982d564661119fbae3d4a1726}
+Accessor for the celestial body data member gasgiant
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a4499676225d09b0249cf225e795ce3cb}{
+\index{Planet@{Planet}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Planet@{Planet}}
+\subsubsection[{getHealth}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getHealth ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a4499676225d09b0249cf225e795ce3cb}
+Accessor for the celestial body data member health
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_ac003f70ce4149dc5d87423dace7de0b1}{
+\index{Planet@{Planet}!getMoons@{getMoons}}
+\index{getMoons@{getMoons}!Planet@{Planet}}
+\subsubsection[{getMoons}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf CelestialBody} $\ast$ $>$ Planet::getMoons ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_ac003f70ce4149dc5d87423dace7de0b1}
+returns a copy of this planets moon vector
+
+\begin{DoxyReturn}{Returns}
+vector$<$CelestialBody$\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCelestialBody_a6c9db5c520596bc85a2e2a461db4b2c8}{CelestialBody}.
+
+\hypertarget{classPlanet_a645b3d987a3001bac59a772b944607d2}{
+\index{Planet@{Planet}!getName@{getName}}
+\index{getName@{getName}!Planet@{Planet}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}string Planet::getName ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a645b3d987a3001bac59a772b944607d2}
+Returns the name of this CelestialObject (planet)
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a4c5cc040f92ec9fde52a4cccd04b69ff}{
+\index{Planet@{Planet}!getNumMoons@{getNumMoons}}
+\index{getNumMoons@{getNumMoons}!Planet@{Planet}}
+\subsubsection[{getNumMoons}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getNumMoons ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a4c5cc040f92ec9fde52a4cccd04b69ff}
+returns the amount of moons orbiting this planet
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCelestialBody_ae41a354c4b3345c7558c9691bc7c239e}{CelestialBody}.
+
+\hypertarget{classPlanet_ad7c07f51f9a447bf4aba45875e5f8e44}{
+\index{Planet@{Planet}!getPlasma@{getPlasma}}
+\index{getPlasma@{getPlasma}!Planet@{Planet}}
+\subsubsection[{getPlasma}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getPlasma ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_ad7c07f51f9a447bf4aba45875e5f8e44}
+Accessor for the celestial body data member plasma
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a37f64a787c17b5dd4471c8ad54fd9df0}{
+\index{Planet@{Planet}!getTrianium@{getTrianium}}
+\index{getTrianium@{getTrianium}!Planet@{Planet}}
+\subsubsection[{getTrianium}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getTrianium ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a37f64a787c17b5dd4471c8ad54fd9df0}
+Accessor for the celestial body data member trianium
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_af5bc4d184fcb72bd37f70119af5ecd89}{
+\index{Planet@{Planet}!getWater@{getWater}}
+\index{getWater@{getWater}!Planet@{Planet}}
+\subsubsection[{getWater}]{\setlength{\rightskip}{0pt plus 5cm}int Planet::getWater ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_af5bc4d184fcb72bd37f70119af5ecd89}
+Accessor for the celestial body data member water
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_ad039e19380947fbf2695d78d4059f1db}{
+\index{Planet@{Planet}!scanMoon@{scanMoon}}
+\index{scanMoon@{scanMoon}!Planet@{Planet}}
+\subsubsection[{scanMoon}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::scanMoon (unsigned int {\em i})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_ad039e19380947fbf2695d78d4059f1db}
+Scans a moon orbitting this planet
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]the moon vector index\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCelestialBody_a6e7b86fa71d74ad29e2434c4715b5608}{CelestialBody}.
+
+\hypertarget{classPlanet_a8f00e39da016ecdca4d1f0e7e8a76f5d}{
+\index{Planet@{Planet}!setAthmosphericInterference@{setAthmosphericInterference}}
+\index{setAthmosphericInterference@{setAthmosphericInterference}!Planet@{Planet}}
+\subsubsection[{setAthmosphericInterference}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setAthmosphericInterference (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a8f00e39da016ecdca4d1f0e7e8a76f5d}
+Mutator for the celestial body data member athmospheric interferance
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a780868e3c6275c2f8026bf7f7b910be1}{
+\index{Planet@{Planet}!setDilithium@{setDilithium}}
+\index{setDilithium@{setDilithium}!Planet@{Planet}}
+\subsubsection[{setDilithium}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setDilithium (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a780868e3c6275c2f8026bf7f7b910be1}
+Mutator for the celestial body data member dilithium
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a2f73c4ce9e4e4eb204b50413ea81d0cc}{
+\index{Planet@{Planet}!setFood@{setFood}}
+\index{setFood@{setFood}!Planet@{Planet}}
+\subsubsection[{setFood}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setFood (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a2f73c4ce9e4e4eb204b50413ea81d0cc}
+Mutator for the celestial body data member food
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_aa3ade00566dc836084395a25adc2cdb8}{
+\index{Planet@{Planet}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Planet@{Planet}}
+\subsubsection[{setHealth}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setHealth (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_aa3ade00566dc836084395a25adc2cdb8}
+Mutator for the celestial body data member health
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a227e20f2716a12afddf50eddcd7c10c5}{
+\index{Planet@{Planet}!setPlasma@{setPlasma}}
+\index{setPlasma@{setPlasma}!Planet@{Planet}}
+\subsubsection[{setPlasma}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setPlasma (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a227e20f2716a12afddf50eddcd7c10c5}
+Mutator for the celestial body data member plasma
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a298ae0e6344b5e83b4c53e5377b0531f}{
+\index{Planet@{Planet}!setTrianium@{setTrianium}}
+\index{setTrianium@{setTrianium}!Planet@{Planet}}
+\subsubsection[{setTrianium}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setTrianium (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a298ae0e6344b5e83b4c53e5377b0531f}
+Mutator for the celestial body data member trianium
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_afbc0d813ae0d2a958487cfc2a06fd9d1}{
+\index{Planet@{Planet}!setWater@{setWater}}
+\index{setWater@{setWater}!Planet@{Planet}}
+\subsubsection[{setWater}]{\setlength{\rightskip}{0pt plus 5cm}void Planet::setWater (int {\em val})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_afbc0d813ae0d2a958487cfc2a06fd9d1}
+Mutator for the celestial body data member water
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classCelestialBody}{CelestialBody}.
+
+\hypertarget{classPlanet_a86eb8c5701ace894c2ca47b80ae776e9}{
+\index{Planet@{Planet}!targetMoon@{targetMoon}}
+\index{targetMoon@{targetMoon}!Planet@{Planet}}
+\subsubsection[{targetMoon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CelestialBody} $\ast$ Planet::targetMoon (unsigned int {\em i})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{d5/dec/classPlanet_a86eb8c5701ace894c2ca47b80ae776e9}
+returns a pointer to a moon orbiting this planet
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em the}]moons vector index\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CelestialBody$\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classCelestialBody_a7919f1dba305a225978fa901a34daf25}{CelestialBody}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/Planet.h\item 
+source/source/Planet.cpp\end{DoxyCompactItemize}

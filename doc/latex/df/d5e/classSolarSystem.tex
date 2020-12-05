@@ -1,0 +1,257 @@
+\hypertarget{classSolarSystem}{
+\section{SolarSystem Class Reference}
+\label{df/d5e/classSolarSystem}\index{SolarSystem@{SolarSystem}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSolarSystem_a459f5b68b920b9816788e76b6a821488}{SolarSystem} (string name, \hyperlink{classStarTrekEntities}{StarTrekEntities} $\ast$stePointer, unsigned int gameDifficulty)
+\item 
+\hyperlink{classSolarSystem_ac520dce0faa7df3755326fb2b6f7b51a}{$\sim$SolarSystem} ()
+\item 
+void \hyperlink{classSolarSystem_a1d7fdbf5b11c2f4cd9b8151390e268a7}{setExits} (\hyperlink{classSolarSystem}{SolarSystem} $\ast$ahead, \hyperlink{classSolarSystem}{SolarSystem} $\ast$port, \hyperlink{classSolarSystem}{SolarSystem} $\ast$back, \hyperlink{classSolarSystem}{SolarSystem} $\ast$starboard)
+\item 
+string \hyperlink{classSolarSystem_a8493fd255139bae07453818facfe52ce}{getName} ()
+\item 
+\hyperlink{classSolarSystem}{SolarSystem} $\ast$ \hyperlink{classSolarSystem_a65d3cebc039c25bc4427f72fb20c890c}{nextSolarSystem} (string direction)
+\item 
+\hyperlink{classCelestialBody}{CelestialBody} $\ast$ \hyperlink{classSolarSystem_a149b4356b3dd7da090b33dc699cc9b7c}{targetPlanet} (unsigned int i)
+\item 
+\hyperlink{classPVEEntity}{PVEEntity} $\ast$ \hyperlink{classSolarSystem_a92a2a0ae9e987e32e65c46d207a868d7}{targetPVEEntity} (unsigned int pve\_\-i)
+\item 
+\hyperlink{classCelestialBody}{CelestialBody} $\ast$ \hyperlink{classSolarSystem_af1511d3f14b0be819941f585fef039a0}{targetPlanetMoon} (unsigned int planet\_\-i, unsigned int moon\_\-i)
+\item 
+void \hyperlink{classSolarSystem_a7be656472d3867ed7eb416da51982463}{scanPlanet} (unsigned int i)
+\item 
+void \hyperlink{classSolarSystem_a7d9d47e7b7a987f4d2bad4ebe40ac911}{scanPlanetMoon} (unsigned int planet\_\-i, unsigned int moon\_\-i)
+\item 
+void \hyperlink{classSolarSystem_a92596df0b4af0f979c06f3de7685a74c}{scanPVEEntity} (unsigned int pve\_\-i)
+\item 
+vector$<$ \hyperlink{classPVEEntity}{PVEEntity} $\ast$ $>$ \hyperlink{classSolarSystem_a4743c88ee83ef7ae0ed3a308004179bb}{getPVEEntity} ()
+\item 
+vector$<$ \hyperlink{classCelestialBody}{CelestialBody} $\ast$ $>$ \hyperlink{classSolarSystem_a334394234a898ccb7b35ee0f2ab8e648}{getSystemPlanets} ()
+\item 
+\hyperlink{classPVEEntity}{PVEEntity} $\ast$ \hyperlink{classSolarSystem_a6f30ebe96f6ef56d967f3e6c368057d2}{randomAttack} (unsigned int difficulty)
+\item 
+void \hyperlink{classSolarSystem_a891417265b57aa785bd808fc7a2485c4}{scanSystem} ()
+\item 
+void \hyperlink{classSolarSystem_a1efb6ebd3741f3fce2f5cb7d1eeffc19}{moveEnemies} ()
+\item 
+void \hyperlink{classSolarSystem_a95839db98d8dbf297536fba1aae7f2a6}{addEnemy} (\hyperlink{classPVEEntity}{PVEEntity} $\ast$visitor)
+\item 
+void \hyperlink{classSolarSystem_a41f1cdf83a580bd2258d9233ef0cdb4f}{operator-\/-\/} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSolarSystem_a459f5b68b920b9816788e76b6a821488}{
+\index{SolarSystem@{SolarSystem}!SolarSystem@{SolarSystem}}
+\index{SolarSystem@{SolarSystem}!SolarSystem@{SolarSystem}}
+\subsubsection[{SolarSystem}]{\setlength{\rightskip}{0pt plus 5cm}SolarSystem::SolarSystem (string {\em name}, \/  {\bf StarTrekEntities} $\ast$ {\em stePointer}, \/  unsigned int {\em gameDifficulty})}}
+\label{df/d5e/classSolarSystem_a459f5b68b920b9816788e76b6a821488}
+Constructor for Solarsystem
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]the name of the solar system \item[{\em stePointer}]pointer to the \hyperlink{classStarTrekEntities}{StarTrekEntities} object names from file) \item[{\em gameDifficulty}]the game difficulty of the game \end{DoxyParams}
+\hypertarget{classSolarSystem_ac520dce0faa7df3755326fb2b6f7b51a}{
+\index{SolarSystem@{SolarSystem}!$\sim$SolarSystem@{$\sim$SolarSystem}}
+\index{$\sim$SolarSystem@{$\sim$SolarSystem}!SolarSystem@{SolarSystem}}
+\subsubsection[{$\sim$SolarSystem}]{\setlength{\rightskip}{0pt plus 5cm}SolarSystem::$\sim$SolarSystem ()}}
+\label{df/d5e/classSolarSystem_ac520dce0faa7df3755326fb2b6f7b51a}
+destructor for the solar system deletes the pointers to the planets and PVEentities 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSolarSystem_a95839db98d8dbf297536fba1aae7f2a6}{
+\index{SolarSystem@{SolarSystem}!addEnemy@{addEnemy}}
+\index{addEnemy@{addEnemy}!SolarSystem@{SolarSystem}}
+\subsubsection[{addEnemy}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::addEnemy ({\bf PVEEntity} $\ast$ {\em visitor})}}
+\label{df/d5e/classSolarSystem_a95839db98d8dbf297536fba1aae7f2a6}
+Takes an enemy pointer and adds it to this system Used in conjunction with enemy movement
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em visitor}]the enemy pointer \end{DoxyParams}
+\hypertarget{classSolarSystem_a8493fd255139bae07453818facfe52ce}{
+\index{SolarSystem@{SolarSystem}!getName@{getName}}
+\index{getName@{getName}!SolarSystem@{SolarSystem}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}string SolarSystem::getName ()}}
+\label{df/d5e/classSolarSystem_a8493fd255139bae07453818facfe52ce}
+gets the name of this solar system
+
+\begin{DoxyReturn}{Returns}
+string the name of the solarsystem 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a4743c88ee83ef7ae0ed3a308004179bb}{
+\index{SolarSystem@{SolarSystem}!getPVEEntity@{getPVEEntity}}
+\index{getPVEEntity@{getPVEEntity}!SolarSystem@{SolarSystem}}
+\subsubsection[{getPVEEntity}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf PVEEntity} $\ast$ $>$ SolarSystem::getPVEEntity ()}}
+\label{df/d5e/classSolarSystem_a4743c88ee83ef7ae0ed3a308004179bb}
+returns a copy of the PVE vector
+
+\begin{DoxyReturn}{Returns}
+vector$<$PVEEntity$\ast$$>$ 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a334394234a898ccb7b35ee0f2ab8e648}{
+\index{SolarSystem@{SolarSystem}!getSystemPlanets@{getSystemPlanets}}
+\index{getSystemPlanets@{getSystemPlanets}!SolarSystem@{SolarSystem}}
+\subsubsection[{getSystemPlanets}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf CelestialBody} $\ast$ $>$ SolarSystem::getSystemPlanets ()}}
+\label{df/d5e/classSolarSystem_a334394234a898ccb7b35ee0f2ab8e648}
+returns a copy of the planets vector
+
+\begin{DoxyReturn}{Returns}
+vector$<$CelestialBody$\ast$$>$ 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a1efb6ebd3741f3fce2f5cb7d1eeffc19}{
+\index{SolarSystem@{SolarSystem}!moveEnemies@{moveEnemies}}
+\index{moveEnemies@{moveEnemies}!SolarSystem@{SolarSystem}}
+\subsubsection[{moveEnemies}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::moveEnemies ()}}
+\label{df/d5e/classSolarSystem_a1efb6ebd3741f3fce2f5cb7d1eeffc19}
+Moves enemies form this solar system to another
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a65d3cebc039c25bc4427f72fb20c890c}{
+\index{SolarSystem@{SolarSystem}!nextSolarSystem@{nextSolarSystem}}
+\index{nextSolarSystem@{nextSolarSystem}!SolarSystem@{SolarSystem}}
+\subsubsection[{nextSolarSystem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SolarSystem} $\ast$ SolarSystem::nextSolarSystem (string {\em direction})}}
+\label{df/d5e/classSolarSystem_a65d3cebc039c25bc4427f72fb20c890c}
+returns the exit to the requested solar system or null if it does not have an exit in that direction
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em direction}]to travel\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer to the directed solarsystem or null 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a41f1cdf83a580bd2258d9233ef0cdb4f}{
+\index{SolarSystem@{SolarSystem}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SolarSystem@{SolarSystem}}
+\subsubsection[{operator-\/-\/}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::operator-\/-\/ ()}}
+\label{df/d5e/classSolarSystem_a41f1cdf83a580bd2258d9233ef0cdb4f}
+Seriously bad example of operator overloading
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a6f30ebe96f6ef56d967f3e6c368057d2}{
+\index{SolarSystem@{SolarSystem}!randomAttack@{randomAttack}}
+\index{randomAttack@{randomAttack}!SolarSystem@{SolarSystem}}
+\subsubsection[{randomAttack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PVEEntity} $\ast$ SolarSystem::randomAttack (unsigned int {\em difficulty})}}
+\label{df/d5e/classSolarSystem_a6f30ebe96f6ef56d967f3e6c368057d2}
+once you enter into this solar system enemies will attack based upon the game difficulty
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em difficulty}]the game difficulty\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a \hyperlink{classPVEEntity}{PVEEntity} or null 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a7be656472d3867ed7eb416da51982463}{
+\index{SolarSystem@{SolarSystem}!scanPlanet@{scanPlanet}}
+\index{scanPlanet@{scanPlanet}!SolarSystem@{SolarSystem}}
+\subsubsection[{scanPlanet}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::scanPlanet (unsigned int {\em i})}}
+\label{df/d5e/classSolarSystem_a7be656472d3867ed7eb416da51982463}
+prints out information about a planet in this solar system
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]the planet to scan\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a7d9d47e7b7a987f4d2bad4ebe40ac911}{
+\index{SolarSystem@{SolarSystem}!scanPlanetMoon@{scanPlanetMoon}}
+\index{scanPlanetMoon@{scanPlanetMoon}!SolarSystem@{SolarSystem}}
+\subsubsection[{scanPlanetMoon}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::scanPlanetMoon (unsigned int {\em planet\_\-i}, \/  unsigned int {\em moon\_\-i})}}
+\label{df/d5e/classSolarSystem_a7d9d47e7b7a987f4d2bad4ebe40ac911}
+calls a planets moon and pointer out information about it in the function called
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em planet\_\-i}]the planet that the moon belongs too \item[{\em moon\_\-i}]the moon belong to the planet\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a92596df0b4af0f979c06f3de7685a74c}{
+\index{SolarSystem@{SolarSystem}!scanPVEEntity@{scanPVEEntity}}
+\index{scanPVEEntity@{scanPVEEntity}!SolarSystem@{SolarSystem}}
+\subsubsection[{scanPVEEntity}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::scanPVEEntity (unsigned int {\em pve\_\-i})}}
+\label{df/d5e/classSolarSystem_a92596df0b4af0f979c06f3de7685a74c}
+prints out information about the selected pve in this solarsystem
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pve\_\-i}]the pve in the vector to scan\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a891417265b57aa785bd808fc7a2485c4}{
+\index{SolarSystem@{SolarSystem}!scanSystem@{scanSystem}}
+\index{scanSystem@{scanSystem}!SolarSystem@{SolarSystem}}
+\subsubsection[{scanSystem}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::scanSystem ()}}
+\label{df/d5e/classSolarSystem_a891417265b57aa785bd808fc7a2485c4}
+prints out information about this solar system including enemies, planets \& their moons
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a1d7fdbf5b11c2f4cd9b8151390e268a7}{
+\index{SolarSystem@{SolarSystem}!setExits@{setExits}}
+\index{setExits@{setExits}!SolarSystem@{SolarSystem}}
+\subsubsection[{setExits}]{\setlength{\rightskip}{0pt plus 5cm}void SolarSystem::setExits ({\bf SolarSystem} $\ast$ {\em ahead}, \/  {\bf SolarSystem} $\ast$ {\em port}, \/  {\bf SolarSystem} $\ast$ {\em back}, \/  {\bf SolarSystem} $\ast$ {\em starboard})}}
+\label{df/d5e/classSolarSystem_a1d7fdbf5b11c2f4cd9b8151390e268a7}
+sets the exits for the solar system
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em ahead}]pointer to a solarsystem \item[{\em port}]pointer to a solarsystem \item[{\em back}]pointer to a solarsystem \item[{\em starboard}]pointer to a solarsystem\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a149b4356b3dd7da090b33dc699cc9b7c}{
+\index{SolarSystem@{SolarSystem}!targetPlanet@{targetPlanet}}
+\index{targetPlanet@{targetPlanet}!SolarSystem@{SolarSystem}}
+\subsubsection[{targetPlanet}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CelestialBody} $\ast$ SolarSystem::targetPlanet (unsigned int {\em i})}}
+\label{df/d5e/classSolarSystem_a149b4356b3dd7da090b33dc699cc9b7c}
+if a target is request for this solar system planet, check to see if it exists first and return a pointer to the object
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em i}]the planet to target in the vector\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to CelestialBody(planet) or null 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_af1511d3f14b0be819941f585fef039a0}{
+\index{SolarSystem@{SolarSystem}!targetPlanetMoon@{targetPlanetMoon}}
+\index{targetPlanetMoon@{targetPlanetMoon}!SolarSystem@{SolarSystem}}
+\subsubsection[{targetPlanetMoon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CelestialBody} $\ast$ SolarSystem::targetPlanetMoon (unsigned int {\em planet\_\-i}, \/  unsigned int {\em moon\_\-i})}}
+\label{df/d5e/classSolarSystem_af1511d3f14b0be819941f585fef039a0}
+if a target is request for this solar system moon, check to see if it exists first and return a pointer to the object
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em planet\_\-i}]the planet that the moon belongs too \item[{\em moon\_\-i}]the moon belong to the planet\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the \hyperlink{classCelestialBody}{CelestialBody} (moon) 
+\end{DoxyReturn}
+\hypertarget{classSolarSystem_a92a2a0ae9e987e32e65c46d207a868d7}{
+\index{SolarSystem@{SolarSystem}!targetPVEEntity@{targetPVEEntity}}
+\index{targetPVEEntity@{targetPVEEntity}!SolarSystem@{SolarSystem}}
+\subsubsection[{targetPVEEntity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PVEEntity} $\ast$ SolarSystem::targetPVEEntity (unsigned int {\em pve\_\-i})}}
+\label{df/d5e/classSolarSystem_a92a2a0ae9e987e32e65c46d207a868d7}
+if a target is request for this solar system pve entity, check to see if it exists first and return a pointer to the object
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em pve\_\-i}]the pve entiry to target\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to a \hyperlink{classPVEEntity}{PVEEntity} or null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/SolarSystem.h\item 
+source/source/SolarSystem.cpp\end{DoxyCompactItemize}

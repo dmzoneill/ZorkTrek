@@ -1,0 +1,52 @@
+\hypertarget{classBitMaze}{
+\section{BitMaze Class Reference}
+\label{d2/ddb/classBitMaze}\index{BitMaze@{BitMaze}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBitMaze_a2737794f74547d90f798d9dda22baa77}{BitMaze} (int width, int height)
+\item 
+\hyperlink{classBitMaze_a9f64c317b829e1250e52fdb8211749b6}{$\sim$BitMaze} ()
+\item 
+char \hyperlink{classBitMaze_a000c5d409337b621996c5fbbfe991890}{getQuandrantLocationVal} (int row, int col)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBitMaze_a2737794f74547d90f798d9dda22baa77}{
+\index{BitMaze@{BitMaze}!BitMaze@{BitMaze}}
+\index{BitMaze@{BitMaze}!BitMaze@{BitMaze}}
+\subsubsection[{BitMaze}]{\setlength{\rightskip}{0pt plus 5cm}BitMaze::BitMaze (int {\em width}, \/  int {\em height})}}
+\label{d2/ddb/classBitMaze_a2737794f74547d90f798d9dda22baa77}
+Constructor Starts creation of new bitStream (maze) 00000 01010 01010 01110 00000
+
+The calloc() function shall allocate unused space for an array of nelem elements each of whose size in bytes is elsize. The space shall be initialized to all bits 0.
+
+Allocates memory space for an array of size (width $\ast$ height) the array elements size of maze struct \hypertarget{classBitMaze_a9f64c317b829e1250e52fdb8211749b6}{
+\index{BitMaze@{BitMaze}!$\sim$BitMaze@{$\sim$BitMaze}}
+\index{$\sim$BitMaze@{$\sim$BitMaze}!BitMaze@{BitMaze}}
+\subsubsection[{$\sim$BitMaze}]{\setlength{\rightskip}{0pt plus 5cm}BitMaze::$\sim$BitMaze ()}}
+\label{d2/ddb/classBitMaze_a9f64c317b829e1250e52fdb8211749b6}
+Destructs the maze 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBitMaze_a000c5d409337b621996c5fbbfe991890}{
+\index{BitMaze@{BitMaze}!getQuandrantLocationVal@{getQuandrantLocationVal}}
+\index{getQuandrantLocationVal@{getQuandrantLocationVal}!BitMaze@{BitMaze}}
+\subsubsection[{getQuandrantLocationVal}]{\setlength{\rightskip}{0pt plus 5cm}char BitMaze::getQuandrantLocationVal (int {\em row}, \/  int {\em col})}}
+\label{d2/ddb/classBitMaze_a000c5d409337b621996c5fbbfe991890}
+returns a position in the quadrant vector
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em int}]row \item[{\em int}]col\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 0 or 1 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/Maze.h\item 
+source/source/Maze.cpp\end{DoxyCompactItemize}

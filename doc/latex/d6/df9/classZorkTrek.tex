@@ -1,0 +1,242 @@
+\hypertarget{classZorkTrek}{
+\section{ZorkTrek Class Reference}
+\label{d6/df9/classZorkTrek}\index{ZorkTrek@{ZorkTrek}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZorkTrek_afe7f77cf684870f7264b15431aa9ca9d}{ZorkTrek} ()
+\item 
+\hyperlink{classZorkTrek_aea71d65cb3ca6c07ca6c7cc63995e089}{$\sim$ZorkTrek} ()
+\item 
+void \hyperlink{classZorkTrek_aee046c36289fb0c839b58f55f4b786d5}{play} ()
+\item 
+void \hyperlink{classZorkTrek_ae7119994598bbf87319c33e10a5762b4}{openGLwarpSolarSystem} (string direction)
+\item 
+void \hyperlink{classZorkTrek_a8f33cd71700aa48a7b173557d2922228}{openGLTargetShip} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_abc6d826f529f4681211a4ca76112d007}{openGLTargetPlanet} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_a1c9ef271699144b716a83ddc550c54b5}{openGLTargetMoon} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_ae1396640eabe5971dfe3c2d5a1d747ca}{openGLScanShip} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_a6801854e2674fcac922dd61e07f39e95}{openGLScanPlanet} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_accb64b4d5c3ed0e331d8d2fb698dd0ec}{openGLScanMoon} (unsigned int x)
+\item 
+void \hyperlink{classZorkTrek_ad099def5ec9fec3dfc2fccbbfc68f3bf}{openGLPhaser} ()
+\item 
+void \hyperlink{classZorkTrek_acd517289066e25a8541bbe74ac2dc74e}{openGLPhoton} ()
+\item 
+void \hyperlink{classZorkTrek_a9387185224b8d78b824a78b0f1a4e3ab}{openGLQuantum} ()
+\item 
+\hypertarget{classZorkTrek_a0ee0cb463294039b3feb4ab85997bb8f}{
+\hyperlink{classBattle}{Battle} $\ast$ {\bfseries getBattle} ()}
+\label{d6/df9/classZorkTrek_a0ee0cb463294039b3feb4ab85997bb8f}
+
+\item 
+\hypertarget{classZorkTrek_ac8881697c19abeb6b0ccc6e0d154aa95}{
+\hyperlink{classCelestialBody}{CelestialBody} $\ast$ {\bfseries getMoonTarget} ()}
+\label{d6/df9/classZorkTrek_ac8881697c19abeb6b0ccc6e0d154aa95}
+
+\item 
+\hypertarget{classZorkTrek_a95adfa3c24d433be310dfcdacdaaba3e}{
+\hyperlink{classCelestialBody}{CelestialBody} $\ast$ {\bfseries getPlanetTarget} ()}
+\label{d6/df9/classZorkTrek_a95adfa3c24d433be310dfcdacdaaba3e}
+
+\item 
+\hypertarget{classZorkTrek_a453dea1d3772f2c9aec709f143f7ebb2}{
+\hyperlink{classPVEEntity}{PVEEntity} $\ast$ {\bfseries getEnemyTarget} ()}
+\label{d6/df9/classZorkTrek_a453dea1d3772f2c9aec709f143f7ebb2}
+
+\item 
+\hypertarget{classZorkTrek_a117ad54920200cb9953035b6b36a4f31}{
+\hyperlink{classStarShip}{StarShip} $\ast$ {\bfseries getPlayer} ()}
+\label{d6/df9/classZorkTrek_a117ad54920200cb9953035b6b36a4f31}
+
+\item 
+\hypertarget{classZorkTrek_a0ca7f07bb54f16c59216e4d8b6b4ef49}{
+Rows {\bfseries getGalaxy} ()}
+\label{d6/df9/classZorkTrek_a0ca7f07bb54f16c59216e4d8b6b4ef49}
+
+\item 
+\hypertarget{classZorkTrek_aab5f693d6c908e3f2d2545931ae27fd7}{
+\hyperlink{classSolarSystem}{SolarSystem} $\ast$ {\bfseries getSystem} ()}
+\label{d6/df9/classZorkTrek_aab5f693d6c908e3f2d2545931ae27fd7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classZorkTrek_afe7f77cf684870f7264b15431aa9ca9d}{
+\index{ZorkTrek@{ZorkTrek}!ZorkTrek@{ZorkTrek}}
+\index{ZorkTrek@{ZorkTrek}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{ZorkTrek}]{\setlength{\rightskip}{0pt plus 5cm}ZorkTrek::ZorkTrek ()}}
+\label{d6/df9/classZorkTrek_afe7f77cf684870f7264b15431aa9ca9d}
+Constructor \hypertarget{classZorkTrek_aea71d65cb3ca6c07ca6c7cc63995e089}{
+\index{ZorkTrek@{ZorkTrek}!$\sim$ZorkTrek@{$\sim$ZorkTrek}}
+\index{$\sim$ZorkTrek@{$\sim$ZorkTrek}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{$\sim$ZorkTrek}]{\setlength{\rightskip}{0pt plus 5cm}ZorkTrek::$\sim$ZorkTrek ()}}
+\label{d6/df9/classZorkTrek_aea71d65cb3ca6c07ca6c7cc63995e089}
+Destructor destroys the galaxy map destructs player, battle kills the opengl thread if running 
+
+\subsection{Member Function Documentation}
+\hypertarget{classZorkTrek_ad099def5ec9fec3dfc2fccbbfc68f3bf}{
+\index{ZorkTrek@{ZorkTrek}!openGLPhaser@{openGLPhaser}}
+\index{openGLPhaser@{openGLPhaser}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLPhaser}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLPhaser ()}}
+\label{d6/df9/classZorkTrek_ad099def5ec9fec3dfc2fccbbfc68f3bf}
+Public accessor to the phaser private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+phaser
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_acd517289066e25a8541bbe74ac2dc74e}{
+\index{ZorkTrek@{ZorkTrek}!openGLPhoton@{openGLPhoton}}
+\index{openGLPhoton@{openGLPhoton}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLPhoton}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLPhoton ()}}
+\label{d6/df9/classZorkTrek_acd517289066e25a8541bbe74ac2dc74e}
+Public accessor to the launch private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+launch
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_a9387185224b8d78b824a78b0f1a4e3ab}{
+\index{ZorkTrek@{ZorkTrek}!openGLQuantum@{openGLQuantum}}
+\index{openGLQuantum@{openGLQuantum}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLQuantum}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLQuantum ()}}
+\label{d6/df9/classZorkTrek_a9387185224b8d78b824a78b0f1a4e3ab}
+Public accessor to the launch private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+launch
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_accb64b4d5c3ed0e331d8d2fb698dd0ec}{
+\index{ZorkTrek@{ZorkTrek}!openGLScanMoon@{openGLScanMoon}}
+\index{openGLScanMoon@{openGLScanMoon}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLScanMoon}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLScanMoon (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_accb64b4d5c3ed0e331d8d2fb698dd0ec}
+Public accessor to the scanner private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+scanner
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_a6801854e2674fcac922dd61e07f39e95}{
+\index{ZorkTrek@{ZorkTrek}!openGLScanPlanet@{openGLScanPlanet}}
+\index{openGLScanPlanet@{openGLScanPlanet}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLScanPlanet}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLScanPlanet (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_a6801854e2674fcac922dd61e07f39e95}
+Public accessor to the scanner private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+scanner
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_ae1396640eabe5971dfe3c2d5a1d747ca}{
+\index{ZorkTrek@{ZorkTrek}!openGLScanShip@{openGLScanShip}}
+\index{openGLScanShip@{openGLScanShip}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLScanShip}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLScanShip (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_ae1396640eabe5971dfe3c2d5a1d747ca}
+Public accessor to the scanner private method for use in the OpenGL interface
+
+\begin{DoxySeeAlso}{See also}
+scanner
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_a1c9ef271699144b716a83ddc550c54b5}{
+\index{ZorkTrek@{ZorkTrek}!openGLTargetMoon@{openGLTargetMoon}}
+\index{openGLTargetMoon@{openGLTargetMoon}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLTargetMoon}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLTargetMoon (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_a1c9ef271699144b716a83ddc550c54b5}
+Public accessor to the targetMoon private method for use in the OpenGL interface
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+targetMoon
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_abc6d826f529f4681211a4ca76112d007}{
+\index{ZorkTrek@{ZorkTrek}!openGLTargetPlanet@{openGLTargetPlanet}}
+\index{openGLTargetPlanet@{openGLTargetPlanet}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLTargetPlanet}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLTargetPlanet (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_abc6d826f529f4681211a4ca76112d007}
+Public accessor to the targetPlanet private method for use in the OpenGL interface
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+targetPlanet
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_a8f33cd71700aa48a7b173557d2922228}{
+\index{ZorkTrek@{ZorkTrek}!openGLTargetShip@{openGLTargetShip}}
+\index{openGLTargetShip@{openGLTargetShip}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLTargetShip}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLTargetShip (unsigned int {\em x})}}
+\label{d6/df9/classZorkTrek_a8f33cd71700aa48a7b173557d2922228}
+Public accessor to the targetShip private method for use in the OpenGL interface
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em x}]\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+targetShip
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_ae7119994598bbf87319c33e10a5762b4}{
+\index{ZorkTrek@{ZorkTrek}!openGLwarpSolarSystem@{openGLwarpSolarSystem}}
+\index{openGLwarpSolarSystem@{openGLwarpSolarSystem}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{openGLwarpSolarSystem}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::openGLwarpSolarSystem (string {\em direction})}}
+\label{d6/df9/classZorkTrek_ae7119994598bbf87319c33e10a5762b4}
+Public accessor to the warpSolarSystem private method for use in the OpenGL interface
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em direction}]\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+warpSolarSystem
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classZorkTrek_aee046c36289fb0c839b58f55f4b786d5}{
+\index{ZorkTrek@{ZorkTrek}!play@{play}}
+\index{play@{play}!ZorkTrek@{ZorkTrek}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void ZorkTrek::play ()}}
+\label{d6/df9/classZorkTrek_aee046c36289fb0c839b58f55f4b786d5}
+entry point for the game and start the pre game setup, followed by the main game LOOP
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/ZorkTrek.h\item 
+source/source/ZorkTrek.cpp\end{DoxyCompactItemize}

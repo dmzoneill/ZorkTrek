@@ -1,0 +1,390 @@
+\hypertarget{classBattle}{
+\section{Battle Class Reference}
+\label{dd/dfd/classBattle}\index{Battle@{Battle}}
+}
+
+
+{\ttfamily \#include $<$Battle.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBattle_abecc253b23b71da260445e4bdc8522e2}{Battle} ()
+\item 
+\hyperlink{classBattle_a46d700ea31d3be9e3c2b7f58a361490e}{Battle} (\hyperlink{classStarShip}{StarShip} $\ast$ship, \hyperlink{classPVEEntity}{PVEEntity} $\ast$enemy)
+\item 
+\hyperlink{classBattle_ae44141e587836ba84243cad46b17c228}{$\sim$Battle} ()
+\item 
+void \hyperlink{classBattle_a21c7d3fe2b8f8acdcf52d7dc03ee0845}{enemyMove} ()
+\item 
+void \hyperlink{classBattle_ac47c4c6769ba4c285b6b3bce196665f7}{Phaser} (bool who)
+\item 
+void \hyperlink{classBattle_af93833dc6f45a9a9b57b3fd0a98c7b53}{Phased} (bool who)
+\item 
+void \hyperlink{classBattle_abb853e7323e8c06115d261476eb60da6}{Pulse} (bool who)
+\item 
+void \hyperlink{classBattle_a4e3b6df23a451e85b0bd078e4a5692fa}{Photon} (bool who)
+\item 
+void \hyperlink{classBattle_ab146205ff35979b462ee057f3dedf84c}{Quantum} (bool who)
+\item 
+void \hyperlink{classBattle_a291ea216c6a4a576c9cd287ddf5afb89}{Transphasic} (bool who)
+\item 
+void \hyperlink{classBattle_ac27cb8ae9cc2220d90446de6d5c2a03e}{Chroniton} (bool who)
+\item 
+void \hyperlink{classBattle_a59fbad01d3da6683a902601dee2a244c}{Gravimetric} (bool who)
+\item 
+void \hyperlink{classBattle_af3866096de0e01ea273b211d0babaade}{Spatial} (bool who)
+\item 
+void \hyperlink{classBattle_a36916b73287143368e13759da9a64842}{Tractor} (bool who, bool tractor)
+\item 
+bool \hyperlink{classBattle_a4c6da8cc9af5dd34901c18a9d54ea139}{enemyHasTractor} ()
+\item 
+\hyperlink{classPVEEntity}{PVEEntity} $\ast$ \hyperlink{classBattle_aafeb9f025d6d77ba8a58a3fbd386c039}{getEnemy} ()
+\item 
+string \hyperlink{classBattle_a5d850d794776aac6b7d742f3385ce82a}{getEnemyName} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classBattle}{Battle} handles fight interaction holds a pointer to the player holds a pointer to the current targeted enemy 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBattle_abecc253b23b71da260445e4bdc8522e2}{
+\index{Battle@{Battle}!Battle@{Battle}}
+\index{Battle@{Battle}!Battle@{Battle}}
+\subsubsection[{Battle}]{\setlength{\rightskip}{0pt plus 5cm}Battle::Battle ()}}
+\label{dd/dfd/classBattle_abecc253b23b71da260445e4bdc8522e2}
+Default Constructor \hypertarget{classBattle_a46d700ea31d3be9e3c2b7f58a361490e}{
+\index{Battle@{Battle}!Battle@{Battle}}
+\index{Battle@{Battle}!Battle@{Battle}}
+\subsubsection[{Battle}]{\setlength{\rightskip}{0pt plus 5cm}Battle::Battle ({\bf StarShip} $\ast$ {\em ship}, \/  {\bf PVEEntity} $\ast$ {\em enemy})}}
+\label{dd/dfd/classBattle_a46d700ea31d3be9e3c2b7f58a361490e}
+A new instance of a battle must have a pointer to the current players SharShip and the enemy being engaged
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em $\ast$ship}]a pointer to the current player's \hyperlink{classStarShip}{StarShip} \item[{\em $\ast$enemy}]a pointer to the \hyperlink{classPVEEntity}{PVEEntity} currently being engaged \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constructor does not have a return type 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_ae44141e587836ba84243cad46b17c228}{
+\index{Battle@{Battle}!$\sim$Battle@{$\sim$Battle}}
+\index{$\sim$Battle@{$\sim$Battle}!Battle@{Battle}}
+\subsubsection[{$\sim$Battle}]{\setlength{\rightskip}{0pt plus 5cm}Battle::$\sim$Battle ()}}
+\label{dd/dfd/classBattle_ae44141e587836ba84243cad46b17c228}
+\begin{DoxyReturn}{Returns}
+deconstructor does not have a return type 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBattle_ac27cb8ae9cc2220d90446de6d5c2a03e}{
+\index{Battle@{Battle}!Chroniton@{Chroniton}}
+\index{Chroniton@{Chroniton}!Battle@{Battle}}
+\subsubsection[{Chroniton}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Chroniton (bool {\em who})}}
+\label{dd/dfd/classBattle_ac27cb8ae9cc2220d90446de6d5c2a03e}
+enemy or the player fires chroniton torps @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a4c6da8cc9af5dd34901c18a9d54ea139}{
+\index{Battle@{Battle}!enemyHasTractor@{enemyHasTractor}}
+\index{enemyHasTractor@{enemyHasTractor}!Battle@{Battle}}
+\subsubsection[{enemyHasTractor}]{\setlength{\rightskip}{0pt plus 5cm}bool Battle::enemyHasTractor ()}}
+\label{dd/dfd/classBattle_a4c6da8cc9af5dd34901c18a9d54ea139}
+finds weather the enemy has a tractor on the player
+
+\begin{DoxyReturn}{Returns}
+bool enemy has a tractor lock
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+PVEEntity::getHasTractorLock 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a21c7d3fe2b8f8acdcf52d7dc03ee0845}{
+\index{Battle@{Battle}!enemyMove@{enemyMove}}
+\index{enemyMove@{enemyMove}!Battle@{Battle}}
+\subsubsection[{enemyMove}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::enemyMove ()}}
+\label{dd/dfd/classBattle_a21c7d3fe2b8f8acdcf52d7dc03ee0845}
+Randomly Performs a enemy move returns if the enemy is destroyed only performs an action if the enemy have that type of weapon seedMicroPrecision decides the action of the switch
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::getIsWreckPVE
+
+\hyperlink{classBattle_ac47c4c6769ba4c285b6b3bce196665f7}{Battle::Phaser} 
+
+\hyperlink{classBattle_af93833dc6f45a9a9b57b3fd0a98c7b53}{Battle::Phased} 
+
+\hyperlink{classBattle_abb853e7323e8c06115d261476eb60da6}{Battle::Pulse} 
+
+\hyperlink{classBattle_a291ea216c6a4a576c9cd287ddf5afb89}{Battle::Transphasic} 
+
+\hyperlink{classBattle_ac27cb8ae9cc2220d90446de6d5c2a03e}{Battle::Chroniton} 
+
+\hyperlink{classBattle_a59fbad01d3da6683a902601dee2a244c}{Battle::Gravimetric} 
+
+\hyperlink{classBattle_af3866096de0e01ea273b211d0babaade}{Battle::Spatial} 
+
+\hyperlink{classBattle_a36916b73287143368e13759da9a64842}{Battle::Tractor}
+
+seedMicroPrecision
+
+PVEEntity::getHasLasers 
+
+PVEEntity::getHasPhasedIonCannon 
+
+PVEEntity::getHasPulseWeapon 
+
+PVEEntity::getHasTransphasicTorpedos 
+
+PVEEntity::getHasChronitonTorpedos 
+
+PVEEntity::getHasGravimetricTorpedos 
+
+PVEEntity::getHasSpatialTorpedos 
+
+PVEEntity::getHasTractorLock 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_aafeb9f025d6d77ba8a58a3fbd386c039}{
+\index{Battle@{Battle}!getEnemy@{getEnemy}}
+\index{getEnemy@{getEnemy}!Battle@{Battle}}
+\subsubsection[{getEnemy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PVEEntity} $\ast$ Battle::getEnemy ()}}
+\label{dd/dfd/classBattle_aafeb9f025d6d77ba8a58a3fbd386c039}
+returns a pointer to the battles enemy
+
+\begin{DoxyReturn}{Returns}
+PVEEntity$\ast$ the enemy 
+\end{DoxyReturn}
+\hypertarget{classBattle_a5d850d794776aac6b7d742f3385ce82a}{
+\index{Battle@{Battle}!getEnemyName@{getEnemyName}}
+\index{getEnemyName@{getEnemyName}!Battle@{Battle}}
+\subsubsection[{getEnemyName}]{\setlength{\rightskip}{0pt plus 5cm}string Battle::getEnemyName ()}}
+\label{dd/dfd/classBattle_a5d850d794776aac6b7d742f3385ce82a}
+returns the name of the current enemy
+
+\begin{DoxyReturn}{Returns}
+string the enemies name
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+PVEEntity::getName 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a59fbad01d3da6683a902601dee2a244c}{
+\index{Battle@{Battle}!Gravimetric@{Gravimetric}}
+\index{Gravimetric@{Gravimetric}!Battle@{Battle}}
+\subsubsection[{Gravimetric}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Gravimetric (bool {\em who})}}
+\label{dd/dfd/classBattle_a59fbad01d3da6683a902601dee2a244c}
+enemy or the player fires gravimetric torps @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_af93833dc6f45a9a9b57b3fd0a98c7b53}{
+\index{Battle@{Battle}!Phased@{Phased}}
+\index{Phased@{Phased}!Battle@{Battle}}
+\subsubsection[{Phased}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Phased (bool {\em who})}}
+\label{dd/dfd/classBattle_af93833dc6f45a9a9b57b3fd0a98c7b53}
+enemy or the player fires phased ion cannon @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_ac47c4c6769ba4c285b6b3bce196665f7}{
+\index{Battle@{Battle}!Phaser@{Phaser}}
+\index{Phaser@{Phaser}!Battle@{Battle}}
+\subsubsection[{Phaser}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Phaser (bool {\em who})}}
+\label{dd/dfd/classBattle_ac47c4c6769ba4c285b6b3bce196665f7}
+enemy or the player fires phasers @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a4e3b6df23a451e85b0bd078e4a5692fa}{
+\index{Battle@{Battle}!Photon@{Photon}}
+\index{Photon@{Photon}!Battle@{Battle}}
+\subsubsection[{Photon}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Photon (bool {\em who})}}
+\label{dd/dfd/classBattle_a4e3b6df23a451e85b0bd078e4a5692fa}
+enemy or the player fires photons @ WHO if its the player updates his amount of photons left
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classStarShip_a48df1266b1b5d8ed36ad91bc0ac8e53b}{StarShip::getPhotons} 
+
+\hyperlink{classStarShip_a207cd846544ef333a25b14d737fa934a}{StarShip::setPhotons} 
+
+\hyperlink{classStarShip_a822cba8f4276378a9c4cec72213e1e80}{StarShip::getName}
+
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_abb853e7323e8c06115d261476eb60da6}{
+\index{Battle@{Battle}!Pulse@{Pulse}}
+\index{Pulse@{Pulse}!Battle@{Battle}}
+\subsubsection[{Pulse}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Pulse (bool {\em who})}}
+\label{dd/dfd/classBattle_abb853e7323e8c06115d261476eb60da6}
+enemy or the player fires pulse ion cannon @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_ab146205ff35979b462ee057f3dedf84c}{
+\index{Battle@{Battle}!Quantum@{Quantum}}
+\index{Quantum@{Quantum}!Battle@{Battle}}
+\subsubsection[{Quantum}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Quantum (bool {\em who})}}
+\label{dd/dfd/classBattle_ab146205ff35979b462ee057f3dedf84c}
+enemy or the player fires quantums @ WHO if its the player updates his amount of quantums left
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classStarShip_a5859482046dae7a0ac2ad18c5714f6eb}{StarShip::getQuantums} 
+
+\hyperlink{classStarShip_a54668a25efe99edc19892e3433008843}{StarShip::setQuantums} 
+
+\hyperlink{classStarShip_a822cba8f4276378a9c4cec72213e1e80}{StarShip::getName}
+
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_af3866096de0e01ea273b211d0babaade}{
+\index{Battle@{Battle}!Spatial@{Spatial}}
+\index{Spatial@{Spatial}!Battle@{Battle}}
+\subsubsection[{Spatial}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Spatial (bool {\em who})}}
+\label{dd/dfd/classBattle_af3866096de0e01ea273b211d0babaade}
+enemy or the player fires spatial torps @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a36916b73287143368e13759da9a64842}{
+\index{Battle@{Battle}!Tractor@{Tractor}}
+\index{Tractor@{Tractor}!Battle@{Battle}}
+\subsubsection[{Tractor}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Tractor (bool {\em who}, \/  bool {\em tractor})}}
+\label{dd/dfd/classBattle_a36916b73287143368e13759da9a64842}
+initiates a tractor on player or enemy
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+\hyperlink{classStarShip_a44bc85e4cbd29a883d1068a08ab6b4b4}{StarShip::setHasTractorLock} 
+
+\hyperlink{classStarShip_af072da551eff3b24cce85dd5f33efba3}{StarShip::getHasTractorLock}
+
+PVEEntity::setHasTractorLockPVE 
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+\hypertarget{classBattle_a291ea216c6a4a576c9cd287ddf5afb89}{
+\index{Battle@{Battle}!Transphasic@{Transphasic}}
+\index{Transphasic@{Transphasic}!Battle@{Battle}}
+\subsubsection[{Transphasic}]{\setlength{\rightskip}{0pt plus 5cm}void Battle::Transphasic (bool {\em who})}}
+\label{dd/dfd/classBattle_a291ea216c6a4a576c9cd287ddf5afb89}
+enemy or the player fires Transphasic torps @ WHO
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em who}]true = player false = current enemy\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Battle::describeAction 
+
+Battle::setShielding
+
+PVEEntity::getIsWreckPVE 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/Battle.h\item 
+source/source/Battle.cpp\end{DoxyCompactItemize}

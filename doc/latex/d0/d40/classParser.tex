@@ -1,0 +1,60 @@
+\hypertarget{classParser}{
+\section{Parser Class Reference}
+\label{d0/d40/classParser}\index{Parser@{Parser}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParser_a12234f6cd36b61af4b50c94a179422c1}{Parser} ()
+\item 
+\hyperlink{classParser_a3e658b5917a93a3ef648050d060e3a93}{$\sim$Parser} ()
+\item 
+\hyperlink{classCommand}{Command} $\ast$ \hyperlink{classParser_a76b5f7778dd0272abee80ab848a43960}{getCommand} (string prefix)
+\item 
+void \hyperlink{classParser_ab893322079a7bc6e6b2153da7d9468bd}{showCommands} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParser_a12234f6cd36b61af4b50c94a179422c1}{
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser::Parser ()}}
+\label{d0/d40/classParser_a12234f6cd36b61af4b50c94a179422c1}
+constructor \hypertarget{classParser_a3e658b5917a93a3ef648050d060e3a93}{
+\index{Parser@{Parser}!$\sim$Parser@{$\sim$Parser}}
+\index{$\sim$Parser@{$\sim$Parser}!Parser@{Parser}}
+\subsubsection[{$\sim$Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser::$\sim$Parser ()}}
+\label{d0/d40/classParser_a3e658b5917a93a3ef648050d060e3a93}
+destructor cleans up commands 
+
+\subsection{Member Function Documentation}
+\hypertarget{classParser_a76b5f7778dd0272abee80ab848a43960}{
+\index{Parser@{Parser}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!Parser@{Parser}}
+\subsubsection[{getCommand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command} $\ast$ Parser::getCommand (string {\em prefix})}}
+\label{d0/d40/classParser_a76b5f7778dd0272abee80ab848a43960}
+Creates a new copy of command for use in the main loop
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em string}]prefix to be added to the line at the user input\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+command 
+\end{DoxyReturn}
+\hypertarget{classParser_ab893322079a7bc6e6b2153da7d9468bd}{
+\index{Parser@{Parser}!showCommands@{showCommands}}
+\index{showCommands@{showCommands}!Parser@{Parser}}
+\subsubsection[{showCommands}]{\setlength{\rightskip}{0pt plus 5cm}void Parser::showCommands ()}}
+\label{d0/d40/classParser_ab893322079a7bc6e6b2153da7d9468bd}
+Shows all the commands
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+source/header/Parser.h\item 
+source/source/Parser.cpp\end{DoxyCompactItemize}
