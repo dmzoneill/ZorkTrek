@@ -243,7 +243,7 @@ string StarTrekEntities::popMoon()
 
 
 /**
-* returns the galaxy dimensions sqrt(lenght)
+* returns the galaxy dimensions sqrt(lenght) // codespell:ignore lenght
 *
 * @return int
 */

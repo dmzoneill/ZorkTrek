@@ -126,7 +126,7 @@ string StarShip::getName()
 
 
 /**
- * Accessor for the ships shield strenght
+ * Accessor for the ships shield strenght // codespell:ignore strenght
  *
  * @return int
  */
@@ -229,9 +229,9 @@ bool StarShip::getIsWreck()
  * @return void
  */
 
-void StarShip::setShieldStrenght(int strenght)
+void StarShip::setShieldStrenght(int strenght) // codespell:ignore strenght
 {
-	this->shields = strenght;
+	this->shields = strenght; // codespell:ignore strenght
 }
 
 
@@ -417,7 +417,7 @@ int StarShip::usage()
 
 /**
  * Mutator for the ships food
- * Wont allow more than the max cargo weight
+ * Wont allow more than the max cargo weight // codespell:ignore wont
  *
  * @param val
  *
@@ -455,7 +455,7 @@ void StarShip::setFood(int val)
 
 /**
  * Mutator for the ships water
- * Wont allow more than the max cargo weight
+ * Wont allow more than the max cargo weight // codespell:ignore wont
  *
  * @param val
  *
@@ -493,7 +493,7 @@ void StarShip::setWater(int val)
 
 /**
  * Mutator for the ships plasma
- * Wont allow more than the max cargo weight
+ * Wont allow more than the max cargo weight // codespell:ignore wont
  *
  * @param val
  *
@@ -538,7 +538,7 @@ void StarShip::setPlasma(int val, bool transporter)
 
 /**
  * Mutator for the ships trianium
- * Wont allow more than the max cargo weight
+ * Wont allow more than the max cargo weight // codespell:ignore wont
  *
  * @param val
  *
@@ -576,7 +576,7 @@ void StarShip::setTrianium(int val)
 
 /**
  * Mutator for the ships dilithium
- * Wont allow more than the max cargo weight
+ * Wont allow more than the max cargo weight // codespell:ignore wont
  *
  * @param val
  *
@@ -613,7 +613,7 @@ void StarShip::setDilithium(int val)
 
 
 /**
- * Updates teh cargo weight based on the cargohold items
+ * Updates teh cargo weight based on the cargohold items // codespell:ignore teh
  *
  * @return void
  */
