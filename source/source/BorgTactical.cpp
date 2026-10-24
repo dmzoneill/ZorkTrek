@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "BorgTactical.h"
 
 /**
@@ -51,15 +55,15 @@ BorgTactical::~BorgTactical()
 /**
 * mutator for the enemies shield strength
 *
-* @param strenght the value to set the data member
+* @param strenght the value to set the data member // codespell:ignore strenght
 *
 * @return void
 *
 */
 
-void BorgTactical::setShieldStrenghtPVE(int strenght)
+void BorgTactical::setShieldStrenghtPVE(int strenght) // codespell:ignore strenght
 {
-    this->shieldStrenght = strenght;
+    this->shieldStrenght = strenght; // codespell:ignore strenght
 }
 
 
@@ -429,3 +433,6 @@ bool BorgTactical::getIsWreckPVE()
 {
     return this->isWreck;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

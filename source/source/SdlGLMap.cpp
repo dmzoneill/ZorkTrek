@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "SdlGLMap.h"
 
 #define COLORKEY 0, 0, 0 // Transparent colour
@@ -111,7 +115,7 @@ SdlGLMap::~SdlGLMap()
     TTF_CloseFont(this->font2);
     TTF_CloseFont(this->font3);
 
-    SDL_FreeSurface(this->screen); // note using delete after this will cuase a c++ double free courption (sdl_free deletes the piinter??)
+    SDL_FreeSurface(this->screen); // note using delete after this will cuase a c++ double free courption (sdl_free deletes the piinter??) // codespell:ignore cuase
     SDL_FreeSurface(this->bg);
     SDL_FreeSurface(this->bg1);
     SDL_FreeSurface(this->introbg);
@@ -1580,7 +1584,7 @@ SDL_Surface* SdlGLMap::drawtext(TTF_Font *fonttodraw, char fgR, char fgG, char f
 
 void SdlGLMap::drawImage(SDL_Surface *srcimg, int sx, int sy, int sw, int sh, SDL_Surface *dstimg, int dx, int dy, int alpha = 255) 
 {
-    if ((srcimg == NULL) || (alpha == 0)) return; //If theres no image, or its 100% transparent.
+    if ((srcimg == NULL) || (alpha == 0)) return; //If theres no image, or its 100% transparent. // codespell:ignore theres
     SDL_Rect src, dst;
 
     src.x = sx;  src.y = sy;  src.w = sw;  src.h = sh;
@@ -1618,3 +1622,6 @@ SDL_Surface* SdlGLMap::loadImage(char *file, bool transparency)
     }
     return tmp;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

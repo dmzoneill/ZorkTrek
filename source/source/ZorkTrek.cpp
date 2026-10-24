@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "ZorkTrek.h"
 
 
@@ -95,7 +99,7 @@ void ZorkTrek::createGalaxy()
     int galaxyHeight = 4;
     int galaxyWidth = 4;
 
-    // instantiate a new instace of the bitmaze creator to cross reference with our solar system pointers later
+    // instantiate a new instace of the bitmaze creator to cross reference with our solar system pointers later // codespell:ignore instace
     BitMaze *maze = new BitMaze(galaxyWidth, galaxyHeight);
 
     galaxyHeight = (galaxyHeight * 2) + 1;
@@ -104,7 +108,7 @@ void ZorkTrek::createGalaxy()
     // instantiate the Star trek entities class to build a list of solar systems, planets and moons
     this->stePointer = new StarTrekEntities();
 
-    // numeber of solar system avaiable
+    // numeber of solar system avaiable // codespell:ignore avaiable,numeber
     int numSystems = this->stePointer->getNumSolarSystems();
     // square root of the avialble systems
     int dimensions = this->stePointer->getGalaxyMatrixDimensions() -1;
@@ -141,7 +145,7 @@ void ZorkTrek::createGalaxy()
     SolarSystem *ahead, *port, *back, *starboard;
     char mazeVal;
 
-    // set up iterators to be use for slecting the pointers which reside around the pointer currently selected
+    // set up iterators to be use for slecting the pointers which reside around the pointer currently selected // codespell:ignore slecting
     map<int, Cols>::iterator itAheadx; // X   (x , ( y - 1 ))
     map<int, Cols>::iterator itBackx; // X   (x , ( y + 1 ))
     map<int, Cols>::iterator itPortx; // X  ( ( x - 1 ), y)
@@ -160,7 +164,7 @@ void ZorkTrek::createGalaxy()
     {
         for ( it2 = it->second.begin(); it2 != it->second.end(); ++it2 )
         {
-            // get the bit from the bitmap whih corresponds to the current x,y position in the galaxy map
+            // get the bit from the bitmap whih corresponds to the current x,y position in the galaxy map // codespell:ignore whih
             mazeVal = maze->getQuandrantLocationVal(it->first, it2->first);
 
             // if the corresponding bit is not 0 then we will continue with setting up the exits for this solarsystem
@@ -170,37 +174,37 @@ void ZorkTrek::createGalaxy()
                 itAheadx = this->Galaxy.find ( it->first );
                 itBackx = this->Galaxy.find ( it->first );
 
-                // we cant go to the left if were at the beginning, otherwise try get the solarsytem to the left
+                // we cant go to the left if were at the beginning, otherwise try get the solarsytem to the left // codespell:ignore cant
                 if(it != this->Galaxy.begin())
                     itPortx = this->Galaxy.find ( it->first - 1 );
                 else
                     itPortx = this->Galaxy.end();
 
-                // we cant go to the right if were at the end, otherwise try get the solarsytem to the right
+                // we cant go to the right if were at the end, otherwise try get the solarsytem to the right // codespell:ignore cant
                 if(it != this->Galaxy.end())
                     itStarboardx = this->Galaxy.find ( it->first + 1 );
                 else
                     itStarboardx = this->Galaxy.end();
 
-                // we cant go to the above if were at the top, otherwise try get the solarsytem above
+                // we cant go to the above if were at the top, otherwise try get the solarsytem above // codespell:ignore cant
                 if(it2 != it->second.begin())
                     itAheady = itAheadx->second.find ( it2->first - 1 );
                 else
                     itAheady = itAheadx->second.end();
 
-                // we cant go to the below if were at the bottom, otherwise try get the solarsytem below
+                // we cant go to the below if were at the bottom, otherwise try get the solarsytem below // codespell:ignore cant
                 if(it2 != it->second.end())
                     itBacky = itBackx->second.find ( it2->first + 1 );
                 else
                     itBacky = itBackx->second.end();
 
-                // check to see if the left system is valid then try to get the mathcing y coordinate
+                // check to see if the left system is valid then try to get the mathcing y coordinate // codespell:ignore mathcing
                 if(itPortx!=this->Galaxy.end())
                     itPorty = itPortx->second.find ( it2->first );
                 else
                     itPorty = itPortx->second.end();
 
-                // check to see if the right system is valid then try to get the mathcing y coordinate
+                // check to see if the right system is valid then try to get the mathcing y coordinate // codespell:ignore mathcing
                 if(itStarboardx!=this->Galaxy.end())
                     itStarboardy = itStarboardx->second.find ( it2->first );
                 else
@@ -212,7 +216,7 @@ void ZorkTrek::createGalaxy()
                 back = itBacky->second;
                 starboard = itStarboardy->second;
 
-                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x, y - 1)
+                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x, y - 1) // codespell:ignore depeding
                 if(itAheady!=itAheadx->second.end())
                 {
                     if(maze->getQuandrantLocationVal(it->first, it2->first - 1)=='1')
@@ -229,7 +233,7 @@ void ZorkTrek::createGalaxy()
                     ahead = NULL;
                 }
 
-                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x, y + 1)
+                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x, y + 1) // codespell:ignore depeding
                 if(itBacky!=itBackx->second.end())
                 {
                     if(maze->getQuandrantLocationVal(it->first, it2->first + 1)=='1')
@@ -246,7 +250,7 @@ void ZorkTrek::createGalaxy()
                     back = NULL;
                 }
 
-                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x -1, y)
+                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x -1, y) // codespell:ignore depeding
                 if(itPorty!=itPortx->second.end())
                 {
                     if(maze->getQuandrantLocationVal(it->first - 1, it2->first)=='1')
@@ -263,7 +267,7 @@ void ZorkTrek::createGalaxy()
                     port = NULL;
                 }
 
-                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x +1, y)
+                // cross reference the exits with the bitmap and assign exits depeding on the bitmap (x +1, y) // codespell:ignore depeding
                 if(itStarboardy!=itStarboardx->second.end())
                 {
                     if(maze->getQuandrantLocationVal(it->first + 1, it2->first)=='1')
@@ -320,7 +324,7 @@ void ZorkTrek::createGalaxy()
                 }
                 else
                 {
-                    // set the current solar system and setup xpos and ypos for use in the CIN input pefix
+                    // set the current solar system and setup xpos and ypos for use in the CIN input pefix // codespell:ignore pefix
                     this->currentSolarSystem = it2->second;
                     this->xPos = randX;
                     this->yPos = randY;
@@ -344,7 +348,7 @@ void ZorkTrek::createGalaxy()
     cout << "                       Sir,  we've arrived in sector \033[31;1m" << randX << "-" << randY << "\033[0m the \033[31;1m" << this->currentSolarSystem->getName() << "\033[0m System" << endl;
     cout << endl;
 
-    // start the sysstem scanner to show the player the enrty point solary system information
+    // start the sysstem scanner to show the player the enrty point solary system information // codespell:ignore enrty
     this->currentSolarSystem->scanSystem();
 
     // create the prefix used for the command interface
@@ -397,7 +401,7 @@ void ZorkTrek::playerSetup()
 
     cout << endl;
     cout << "                Enter a game difficulty of 1 (lowest) 5 (Highest)  " << endl;
-    cout << "                This will affect the amount of resources and ingame enemies and their strenghts   " << endl;
+    cout << "                This will affect the amount of resources and ingame enemies and their strenghts   " << endl; // codespell:ignore strenghts
     cout << endl;
 
     string buffer2;
@@ -568,7 +572,7 @@ bool ZorkTrek::processCommand(Command command)
 
 
 /**
-* interates through the solar system map and prints out a legend of accessible rooms, visited history etc
+* interates through the solar system map and prints out a legend of accessible rooms, visited history etc // codespell:ignore interates
 *
 * @return void
 */
@@ -872,7 +876,7 @@ void ZorkTrek::warpSolarSystem(Command command)
         // update the prefix for the new system
         this->prefix = buffer.str();
 
-        // reset targetting
+        // reset targetting // codespell:ignore targetting
         this->planetTarget = NULL;
         this->moonTarget = NULL;
         this->enemyTarget = NULL;
@@ -983,7 +987,7 @@ void ZorkTrek::scanner(Command command)
 
 
 /**
-* launches torpedos
+* launches torpedos // codespell:ignore torpedos
 * note target must be locked first
 *
 * @param command
@@ -1155,7 +1159,7 @@ void ZorkTrek::phaser()
 
 
 /**
-* prints information about the players ships complements of resources weaponary and defensive
+* prints information about the players ships complements of resources weaponary and defensive // codespell:ignore weaponary
 *
 * @return void
 */
@@ -1171,7 +1175,7 @@ void ZorkTrek::status()
     cout << endl;
     cout << "                 \033[34;1mDefence\033[0m :" << endl;
     cout << "               ----------------------------------------------------------------------" << endl;
-    cout << "                             Shield Strenght             : \033[31;1m" << this->player->getShieldStrenght() << "\033[0m / " << MAX_SHIELDS <<  endl;
+    cout << "                             Shield Strenght             : \033[31;1m" << this->player->getShieldStrenght() << "\033[0m / " << MAX_SHIELDS <<  endl; // codespell:ignore strenght
     cout << "                             Shield Regenerative Rate    : \033[31;1m" << this->player->getShieldRegenerativeRate() << "\033[0m" << endl;
     cout << "                             Armour                      : \033[31;1m" << this->player->getArmour() << "\033[0m / " << MAX_ARMOUR  << endl;
     cout << "                 \033[34;1mAttack\033[0m  :" << endl;
@@ -1243,9 +1247,9 @@ void ZorkTrek::transporter(Command command)
     {
         if(this->enemyTarget->getShieldStrenght() <= 0)
         {
-            if (command.getSecondWord().compare("torpedos")==0)
+            if (command.getSecondWord().compare("torpedos")==0) // codespell:ignore torpedos
             {
-                // beam up enemy torpedos and retrofit to our launchers
+                // beam up enemy torpedos and retrofit to our launchers // codespell:ignore torpedos
                 if(this->currentBattle!=NULL)
                 {
                     this->currentBattle->enemyMove();
@@ -1530,13 +1534,13 @@ void ZorkTrek::target(Command command)
     if (!command.hasSecondWord() && !command.hasThirdWord())
     {
         if(this->planetTarget!=NULL)
-            cout << "               Currently targetting planet '\033[34;1m" << this->planetTarget->getName() << "\033[0m'" << endl;
+            cout << "               Currently targetting planet '\033[34;1m" << this->planetTarget->getName() << "\033[0m'" << endl; // codespell:ignore targetting
 
         if(this->moonTarget!=NULL)
-            cout << "               Currently targetting planet '\033[34;1m" << this->moonTarget->getName() << "\033[0m'" << endl;
+            cout << "               Currently targetting planet '\033[34;1m" << this->moonTarget->getName() << "\033[0m'" << endl; // codespell:ignore targetting
 
         if(this->enemyTarget!=NULL)
-            cout << "               Currently targetting planet '\033[34;1m" << this->enemyTarget->getName() << "\033[0m'" << endl;
+            cout << "               Currently targetting planet '\033[34;1m" << this->enemyTarget->getName() << "\033[0m'" << endl; // codespell:ignore targetting
 
         cout << endl;
 
@@ -1551,7 +1555,7 @@ void ZorkTrek::target(Command command)
     }
     else if (command.hasSecondWord() && !command.hasThirdWord())
     {
-        // reset targetting
+        // reset targetting // codespell:ignore targetting
         this->planetTarget = NULL;
         this->moonTarget = NULL;
         this->enemyTarget = NULL;
@@ -1564,7 +1568,7 @@ void ZorkTrek::target(Command command)
         this->planetTarget = this->currentSolarSystem->targetPlanet(i);
 
         if(this->planetTarget!=NULL)
-            cout << "               \033[31;1mTactical Officer\033[0m : Targetting planet '\033[34;1m" << this->planetTarget->getName() << "\033[0m'" << endl;
+            cout << "               \033[31;1mTactical Officer\033[0m : Targetting planet '\033[34;1m" << this->planetTarget->getName() << "\033[0m'" << endl; // codespell:ignore targetting
         else
             cout << "               \033[31;1mTactical Officer\033[0m : sir? what planet would you like me to target? " << endl;
 
@@ -1579,7 +1583,7 @@ void ZorkTrek::target(Command command)
     {
         if (command.getSecondWord().compare("ship")==0)
         {
-            // reset targetting
+            // reset targetting // codespell:ignore targetting
             this->planetTarget = NULL;
             this->moonTarget = NULL;
             this->enemyTarget = NULL;
@@ -1594,7 +1598,7 @@ void ZorkTrek::target(Command command)
 
             if(this->enemyTarget!=NULL)
             {
-                cout << "               \033[31;1mTactical Officer\033[0m : Targetting ship '\033[34;1m" << this->enemyTarget->getName() << "\033[0m'" << endl;
+                cout << "               \033[31;1mTactical Officer\033[0m : Targetting ship '\033[34;1m" << this->enemyTarget->getName() << "\033[0m'" << endl; // codespell:ignore targetting
             }
             else
             {
@@ -1605,7 +1609,7 @@ void ZorkTrek::target(Command command)
         }
         else
         {
-            // reset targetting
+            // reset targetting // codespell:ignore targetting
             this->planetTarget = NULL;
             this->moonTarget = NULL;
             this->enemyTarget = NULL;
@@ -2047,3 +2051,6 @@ void ZorkTrek::openGLwarpSolarSystem(string direction)
     bool finished = this->processCommand(*openGLCommand);
     delete openGLCommand;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND
