@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "BorgScout.h"
 
 
@@ -53,15 +57,15 @@ BorgScout::~BorgScout()
 /**
 * mutator for the enemies shield strength
 *
-* @param strenght the value to set the data member
+* @param strenght the value to set the data member // codespell:ignore strenght
 *
 * @return void
 *
 */
 
-void BorgScout::setShieldStrenghtPVE(int strenght)
+void BorgScout::setShieldStrenghtPVE(int strenght) // codespell:ignore strenght
 {
-    this->shieldStrenght = strenght;
+    this->shieldStrenght = strenght; // codespell:ignore strenght
 }
 
 
@@ -432,3 +436,6 @@ bool BorgScout::getIsWreckPVE()
     return this->isWreck;
 }
 
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

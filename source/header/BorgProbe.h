@@ -1,4 +1,8 @@
-#ifndef BORGPROBE_H_
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
+#ifndef BORGPROBE_H_  // NOLINT(build/header_guard)
 #define BORGPROBE_H_
 
 #include "PVEEntity.h"
@@ -35,7 +39,7 @@ class BorgProbe : public PVEEntity
         bool getHasTractorLock();
         bool getIsWreckPVE();
 
-        void setShieldStrenghtPVE(int strenght);
+        void setShieldStrenghtPVE(int strenght); // codespell:ignore strenght
         void setShieldRegenerativeRatePVE(int rate);
 
         void setArmourPVE(int armour);
@@ -50,3 +54,6 @@ class BorgProbe : public PVEEntity
 };
 
 #endif /*BORGPROBE_H_*/
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

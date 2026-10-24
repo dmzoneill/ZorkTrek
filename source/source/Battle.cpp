@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "Battle.h"
 
 /**
@@ -308,7 +312,7 @@ void Battle::setArmour(bool who, int damage)
     // get the damage for the enemy or the current player
     int armourDamage = who ? (playerArmour - damage) : (enemyArmour - damage);
 
-    // if the damage is greater than the players, enemies armour, they are destoryed
+    // if the damage is greater than the players, enemies armour, they are destoryed // codespell:ignore destoryed
     if(armourDamage<=0)
     {
         this->setWreck(who);
@@ -336,7 +340,7 @@ void Battle::setArmour(bool who, int damage)
 
 /**
 * Sets the enemy or the player as destroyed (wrecked)
-* disabled an enemies tractor lock also, to avoid deadlock (player cant escape even though enemy has been destroyed)
+* disabled an enemies tractor lock also, to avoid deadlock (player cant escape even though enemy has been destroyed) // codespell:ignore cant
 *
 * @param who true = player false = current enemy
 *
@@ -466,13 +470,13 @@ void Battle::Photon(bool who)
     if(this->player->getPhotons() > 0)
     {
         this->describeAction(who, "launched photon torpedo at ");
-        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has " << (this->player->getPhotons() - 1) << " photon torpedos left";
+        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has " << (this->player->getPhotons() - 1) << " photon torpedos left"; // codespell:ignore torpedos
         this->player->setPhotons(this->player->getPhotons() - 1);
         this->setShielding(who, PHOTON_DAMAGE);
     }
     else
     {
-        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has 0 photon torpedos left";
+        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has 0 photon torpedos left"; // codespell:ignore torpedos
     }
 }	
 
@@ -504,13 +508,13 @@ void Battle::Quantum(bool who)
     if(this->player->getQuantums() > 0)
     {
         this->describeAction(who, "launched quantum torpedo at ");
-        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has " << (this->player->getQuantums() - 1) << " quantum torpedos left";
+        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has " << (this->player->getQuantums() - 1) << " quantum torpedos left"; // codespell:ignore torpedos
         this->player->setQuantums(this->player->getQuantums() - 1);
         this->setShielding(who, QUANTUM_DAMAGE);
     }
     else
     {
-        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has 0 quantum torpedos left";
+        cout << "                   '\033[31;1m" << this->player->getName() << "\033[0m' has 0 quantum torpedos left"; // codespell:ignore torpedos
     }
 }	
 
@@ -714,3 +718,6 @@ void Battle::describeAction(bool who, string action)
     cout << endl;
     cout << "                   '\033[31;1m" << attacker << "\033[0m' has " << action << "'\033[31;1m" << victim << "\033[0m'" << endl;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

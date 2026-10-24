@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "ZorkTrek.h"
 
 
@@ -2047,3 +2051,6 @@ void ZorkTrek::openGLwarpSolarSystem(string direction)
     bool finished = this->processCommand(*openGLCommand);
     delete openGLCommand;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

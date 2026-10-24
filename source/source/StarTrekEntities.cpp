@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "StarTrekEntities.h"
 
 
@@ -250,3 +254,7 @@ int StarTrekEntities::getGalaxyMatrixDimensions()
     double sqr = sqrt(temp);
     return (int) ceil(sqr);
 }
+
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND

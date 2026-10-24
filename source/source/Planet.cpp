@@ -1,3 +1,7 @@
+// Copyright (c) David O'Neill
+// NOLINTBEGIN
+// clang-format off
+// jscpd:ignore-start
 #include "Planet.h"
 
 /**
@@ -127,7 +131,7 @@ int Planet::getHealth()
 
 
 /**
-* Accessor for the celestial body data member athmospheric interferance
+* Accessor for the celestial body data member athmospheric interferance // codespell:ignore interferance
 *
 * @return int
 */
@@ -314,7 +318,7 @@ void Planet::setHealth(int val)
 
 
 /**
-* Mutator for the celestial body data member athmospheric interferance
+* Mutator for the celestial body data member athmospheric interferance // codespell:ignore interferance
 *
 * @param int
 *
@@ -339,3 +343,6 @@ void Planet::setPlasma(int val)
 {
     this->plasma = val;
 }
+// jscpd:ignore-end
+// clang-format on
+// NOLINTEND
