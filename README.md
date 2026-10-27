@@ -1,5 +1,9 @@
 # ZorkTrek
 
+<p align="center">
+  <img src=".github/logo.png" alt="ZorkTrek logo" width="128" />
+</p>
+
 A Zork-style text adventure set in the Star Trek universe, written in
 C++. It has an optional SDL and OpenGL map view.
 
